@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Layout from "../Layouts";
 import { HomePage, DestinationPage, CrewPage, TechPage } from "../pages";
 const routes = [
@@ -8,7 +8,7 @@ const routes = [
   { path: "/tech", element: <TechPage /> },
 ];
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   { path: "/", element: <Layout />, children: [...routes] },
 ]);
 
