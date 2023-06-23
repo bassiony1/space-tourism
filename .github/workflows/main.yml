@@ -2,7 +2,7 @@ name: Publish React app on push
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build-and-publish:
@@ -21,11 +21,11 @@ jobs:
       - name: Checkout publish branch
         uses: actions/checkout@v2
         with:
-          ref: publish 
+          ref: publish
 
       - name: Copy build files to publish branch
         run: |
-          cp -r build/* .
+          cp -r dist/* .
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
           git add .
