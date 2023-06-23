@@ -9,7 +9,7 @@ const HomePage = () => {
     document.body.style.backgroundPosition = "center";
   }, []);
 
-  return <div>HomePage Upadated</div>;
+  return <div>HomePage Upadated++</div>;
 };
 
 export default HomePage;
