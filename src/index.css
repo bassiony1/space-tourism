@@ -56,8 +56,24 @@ body {
   transition: all 0.5s ease-in-out;
   /* background-color: hsl(230, 35%, 7%); */
 }
+body:after {
+  position: absolute;
+  z-index: -1;
+  content: url(images/home-bg.png) url(images/tech-bg.png)
+    url(images/crew-bg.png) url(images/dest-bg.png);
+}
 
 #root {
   min-height: 100dvh;
   /* background-color: hsl(230, 35%, 7%); */
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.25rem;
+  width: 100%;
+  @apply opacity-100 bg-secondary-500;
 }
