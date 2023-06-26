@@ -6,7 +6,7 @@ const DestinationPage = () => {
   const Navigator = useMatches();
   console.log(Navigator[2]);
   useLayoutEffect(() => {
-    document.title = "Tech";
+    document.title = "Destination";
     document.body.style.backgroundImage = "url('/images/dest-bg.png')";
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundRepeat = "no-repeat";
@@ -15,7 +15,7 @@ const DestinationPage = () => {
 
   return (
     <>
-      <div className="ml-5 my-10">
+      <div className="ml-5 my-10 text-center md:container md:text-left">
         <h1 className="font-Barlow text-white text-20 tracking-widest before:content-['01'] before:text-opacity-25 before:text-20 before:mr-2 before:text-white">
           PICK YOUR DESTINATION
         </h1>

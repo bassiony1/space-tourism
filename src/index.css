@@ -59,9 +59,13 @@ body:after {
   content: "";
   position: absolute;
   z-index: -1;
-  background: url(images/home-bg.png), url(images/tech-bg.png),
-    url(images/crew-bg.png), url(images/dest-bg.png), url(images/moon.png),
-    url(images/mars.png), url(images/titan.png), url(images/europa.png);
+  background: url(/images/home-bg.png), url(/images/tech-bg.png),
+    url(/images/crew-bg.png), url(/images/dest-bg.png), url(/images/moon.png),
+    url(/images/mars.png), url(/images/titan.png), url(/images/europa.png),
+    url(/images/crew-douglas.png), url(/images/crew-mark.png),
+    url(/images/crew-vector.png), url(/images/crew-ano.png),
+    url(/images/tech-lunch.png), url(/images/tech-port.png),
+    url(/images/tech-cap.png);
 }
 
 #root {
