@@ -2,19 +2,32 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+    },
     extend: {
-      colors: {
-        primary: {
-          100: "#d2d3d8",
-          200: "#a5a6b0",
-          300: "#787a89",
-          400: "#4b4d61",
-          500: "#1e213a",
-          600: "#181a2e",
-          700: "#121423",
-          800: "#0c0d17",
-          900: "#06070c",
+      keyframes: {
+        appear: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
         },
+      },
+      animation: {
+        "spin-slow-once": "spin 10s linear infinite 2s",
+
+        appear: "appear 2s ease-in-out both",
+      },
+
+      gridTemplateRows: {
+        "6-auto": "repeat(6, minmax(0, auto))",
+        "5-auto": "repeat(5, minmax(0, auto))",
+      },
+      gridTemplateColumns: {
+        "2-auto": "repeat(2, minmax(0, auto))",
+      },
+      colors: {
+        primary: "#0B0D17",
         secondary: {
           100: "#f6f7fe",
           200: "#eceffd",
@@ -31,6 +44,7 @@ export default {
         14: "14px",
         16: "16px",
         18: "18px",
+        20: "20px",
         28: "28px",
         32: "32px",
         56: "56px",
@@ -43,7 +57,5 @@ export default {
       },
     },
   },
-  plugins: [
-    
-  ],
+  plugins: [],
 };

@@ -54,18 +54,18 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   transition: all 0.5s ease-in-out;
-  /* background-color: hsl(230, 35%, 7%); */
 }
 body:after {
+  content: "";
   position: absolute;
   z-index: -1;
-  content: url(images/home-bg.png) url(images/tech-bg.png)
-    url(images/crew-bg.png) url(images/dest-bg.png);
+  background: url(images/home-bg.png), url(images/tech-bg.png),
+    url(images/crew-bg.png), url(images/dest-bg.png), url(images/moon.png),
+    url(images/mars.png), url(images/titan.png), url(images/europa.png);
 }
 
 #root {
   min-height: 100dvh;
-  /* background-color: hsl(230, 35%, 7%); */
 }
 
 .active::after {
