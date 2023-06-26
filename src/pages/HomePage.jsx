@@ -10,7 +10,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center py-20 w-full gap-20 mt-32 md:gap-10 md:flex-row md:container md:px-20">
+    <div className="flex flex-col items-center justify-center py-20 w-full gap-20 my-auto md:gap-10 md:flex-row md:container md:px-20">
       <div className="flex flex-col justify-center w-full md:flex-1">
         <p className="text-secondary-500 text-center text-20 font-Barlow md:text-28 md:text-left">
           SO, YOU WANT TO TRAVEL TO

@@ -29,7 +29,9 @@ const Layout = ({ imgPath, desc, name, avgDist, travelTime }) => {
         {desc}
       </p>
       <div className={`${divider} h-[1px]  bg-[#383B4B] w-3/4`}></div>
-      <div className={`${data} flex justify-center items-center gap-8`}>
+      <div
+        className={`${data} flex flex-col justify-center items-center gap-8 p-4 md:flex-row`}
+      >
         <div className="text-center text-secondary-500">
           <h4 className="text-14 font-Barlow mb-2 tracking-widest">
             AVG. DISTANCE

@@ -6,7 +6,7 @@ const Navbar = () => {
   const [open, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex flex-col items-center justify-between gap-2 w-full py-5 relative md:flex-row ">
+    <nav className="flex flex-col items-center justify-between gap-2 w-full py-5 relative md:flex-row self-start">
       <div className="w-full px-5 md:m-5 md:flex-[2]">
         <img src="/images/logo.png" alt="" className="w-[48px] aspect-square" />
       </div>

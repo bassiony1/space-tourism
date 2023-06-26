@@ -4,7 +4,7 @@ import Navbar from "../components/Common/Navbar";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="h-full flex flex-col">
       <Navbar />
       <Outlet />
     </div>
