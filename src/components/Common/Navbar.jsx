@@ -4,9 +4,10 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
   const [open, setIsOpen] = useState(false);
-
+  const beforeStyle =
+    "xl:before:content-[''] xl:before:top-50 xl:before:left-[-54%] xl:before:w-[58%] xl:before:block xl:before:absolute xl:before:h-[1px] xl:before:bg-white xl:before:bg-opacity-25 ";
   return (
-    <nav className="flex flex-col items-center justify-between gap-2 w-full py-5 relative md:flex-row self-start">
+    <nav className="relative flex flex-col items-center self-start justify-between w-full gap-2 py-5 md:flex-row">
       <div className="w-full px-5 md:m-5 md:flex-[2]">
         <img src="/images/logo.png" alt="" className="w-[48px] aspect-square" />
       </div>
@@ -28,7 +29,7 @@ const Navbar = () => {
       <ul
         className={`${
           open ? "flex" : "hidden"
-        } animate-appear md:animate-none flex-col w-10/12 items-center justify-around px-16 bg-white bg-opacity-[.04] backdrop-blur-[40.7px] gap-8 flex-[3] tracking-[3px] md:flex md:flex-row`}
+        } animate-appear  md:animate-none flex-col w-10/12 items-center justify-around px-16 bg-white bg-opacity-[.04] backdrop-blur-[40.7px] gap-8 flex-[3] tracking-[3px] md:flex md:flex-row | ${beforeStyle}`}
       >
         <li className="text-16 font-Barlow text-white   relative hover:before:absolute hover:before:content-[''] hover:before:bottom-0 hover:before:h-1 hover:before:bg-secondary-500 hover:before:bg-opacity-[.5] hover:before:w-full">
           <NavLink to="/" className="before:content-['00'] py-10 before:mr-2 ">

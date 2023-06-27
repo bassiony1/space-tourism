@@ -32,19 +32,19 @@ const TechPage = () => {
   }, []);
   return (
     <>
-      <div className="ml-5 my-10 text-center md:container lg:text-left">
+      <div className="my-10 ml-5 text-center md:container lg:text-left">
         <h1 className="font-Barlow text-white text-20 tracking-widest before:content-['03'] before:text-opacity-25 before:text-20 before:mr-2 before:text-white">
           SPACE LAUNCH 101
         </h1>
       </div>
-      <div className="flex flex-col gap-12 w-full lg:flex-row-reverse lg:h-full">
+      <div className="flex flex-col w-full gap-12 lg:flex-row-reverse lg:h-full">
         <div className="w-full lg:flex lg:max-w-[600px] lg:max-h-[600px]">
           <img src={img} alt="" />
         </div>
-        <div className="container flex flex-col gap-7 mb-12 lg:flex-row">
-          <div className="flex gap-5 justify-center items-center lg:ml-auto lg:flex-col">
+        <div className="container flex flex-col mb-12 gap-7 lg:flex-row">
+          <div className="flex items-center justify-center gap-5 lg:ml-auto lg:flex-col">
             <div
-              className={`flex justify-center items-center h-14 text-white rounded-full aspect-square border-2 border-[rgba(255,255,255,.25)] cursor-pointer hover:border-white ${
+              className={`flex justify-center items-center h-14 rounded-full aspect-square border-2 border-[rgba(255,255,255,.25)] cursor-pointer hover:border-white ${
                 selectedPhase === 0 ? "bg-white text-[#0B0D17]" : "text-white"
               }`}
               onClick={() => setSelectedPhase(0)}
@@ -52,7 +52,7 @@ const TechPage = () => {
               1
             </div>
             <div
-              className={`flex justify-center items-center h-14 text-white rounded-full aspect-square border-2 border-[rgba(255,255,255,.25)] cursor-pointer hover:border-white ${
+              className={`flex justify-center items-center h-14 rounded-full aspect-square border-2 border-[rgba(255,255,255,.25)] cursor-pointer hover:border-white ${
                 selectedPhase === 1 ? "bg-white text-[#0B0D17]" : "text-white"
               }`}
               onClick={() => setSelectedPhase(1)}
@@ -70,7 +70,7 @@ const TechPage = () => {
           </div>
 
           <div className="flex flex-col gap-5 lg:items-center lg:justify-center lg:max-w-[500px] lg:mx-auto">
-            <h2 className="text-center text-secondary-500 font-Barlow tracking-widest">
+            <h2 className="tracking-widest text-center text-secondary-500 font-Barlow">
               THE TERMINOLOGY…
             </h2>
             <h1 className="text-center text-white font-Bellefair text-32 ">

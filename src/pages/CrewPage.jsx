@@ -12,7 +12,7 @@ const CrewPage = () => {
     },
     {
       title: "Mission Specialist",
-      name: "MARK SHUTTLEWORTH",
+      name: "MARK SHUTTLE",
       description:
         "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
       img: "/images/crew-mark.png",
@@ -42,24 +42,24 @@ const CrewPage = () => {
   }, []);
   return (
     <>
-      <div className="ml-5 my-10 text-center md:container md:text-left">
+      <div className="my-10 ml-5 text-center md:container md:text-left">
         <h1 className="font-Barlow text-white text-20 tracking-widest before:content-['02'] before:text-opacity-25 before:text-20 before:mr-2 before:text-white">
           MEET YOUR CREW
         </h1>
       </div>
-      <div className="flex flex-col mt-auto gap-5 md:gap-14 md:container lg:overflow-hidden lg:mt-auto">
+      <div className="flex flex-col gap-5 mt-auto md:gap-14 md:container lg:overflow-hidden lg:mt-auto">
         <div className="flex flex-col gap-5 items-center justify-center lg:flex-row lg:h-[700px]">
           <div className="flex flex-col justify-center gap-5 lg:items-start lg:w-1/2 ">
-            <h1 className="text-center text-white text-opacity-50 font-Bellefair text-28 uppercase lg:text-left">
+            <h1 className="text-center text-white text-opacity-50 uppercase font-Bellefair text-28 lg:text-left">
               {title}
             </h1>
-            <h2 className="text-white text-center text-56 font-Bellefair uppercase lg:text-left">
+            <h2 className="text-center text-white uppercase text-56 font-Bellefair lg:text-left">
               {name}
             </h2>
             <p className="text-20 text-secondary-500 text-center font-Barlow max-w-[80%] mx-auto leading-9 lg:text-left lg:mx-0">
               {description}
             </p>
-            <div className="flex justify-center items-center gap-5 lg:mt-14">
+            <div className="flex items-center justify-center gap-5 lg:mt-14">
               <span
                 className={`block w-5 aspect-square rounded-full bg-white hover:bg-opacity-50 cursor-pointer ${
                   selectedCrew === 0 ? "" : "bg-opacity-10"

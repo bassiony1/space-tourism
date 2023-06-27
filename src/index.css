@@ -82,3 +82,16 @@ body:after {
   width: 100%;
   @apply opacity-100 bg-secondary-500;
 }
+.nav {
+  position: relative;
+}
+.nav::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 58%;
+  left: -54%;
+  top: 50%;
+}
