@@ -42,21 +42,24 @@ const CrewPage = () => {
   }, []);
   return (
     <>
-      <div className="my-10 ml-5 text-center md:container md:text-left">
+      <div className="my-10 text-center md:container md:text-left">
         <h1 className="font-Barlow text-white text-20 tracking-widest before:content-['02'] before:text-opacity-25 before:text-20 before:mr-2 before:text-white">
           MEET YOUR CREW
         </h1>
       </div>
-      <div className="flex flex-col gap-5 mt-auto md:gap-14 md:container lg:overflow-hidden lg:mt-auto">
+      <div
+        key={selectedCrew}
+        className="flex flex-col gap-5 mt-auto md:gap-14 md:container lg:overflow-hidden lg:mt-auto"
+      >
         <div className="flex flex-col gap-5 items-center justify-center lg:flex-row lg:h-[700px]">
           <div className="flex flex-col justify-center gap-5 lg:items-start lg:w-1/2 ">
-            <h1 className="text-center text-white text-opacity-50 uppercase font-Bellefair text-28 lg:text-left">
+            <h1 className="text-center text-white text-opacity-50 uppercase font-Bellefair text-28 animate-appear lg:text-left">
               {title}
             </h1>
-            <h2 className="text-center text-white uppercase text-56 font-Bellefair lg:text-left">
+            <h2 className="text-center text-white uppercase text-56 font-Bellefair animate-appear lg:text-left">
               {name}
             </h2>
-            <p className="text-20 text-secondary-500 text-center font-Barlow max-w-[80%] mx-auto leading-9 lg:text-left lg:mx-0">
+            <p className="text-20 text-secondary-500 text-center font-Barlow max-w-[80%] mx-auto leading-9 animate-appear lg:text-left lg:mx-0">
               {description}
             </p>
             <div className="flex items-center justify-center gap-5 lg:mt-14">
@@ -86,7 +89,7 @@ const CrewPage = () => {
               ></span>
             </div>
           </div>
-          <div className="lg:w-1/2 flex lg:h-[700px] ">
+          <div className="animate-appear lg:w-1/2 flex lg:h-[700px] ">
             <img src={img} alt="" />
           </div>
         </div>

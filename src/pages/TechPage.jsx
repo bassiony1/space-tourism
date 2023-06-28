@@ -32,13 +32,16 @@ const TechPage = () => {
   }, []);
   return (
     <>
-      <div className="my-10 ml-5 text-center md:container lg:text-left">
+      <div className="my-10  text-center md:container lg:text-left">
         <h1 className="font-Barlow text-white text-20 tracking-widest before:content-['03'] before:text-opacity-25 before:text-20 before:mr-2 before:text-white">
           SPACE LAUNCH 101
         </h1>
       </div>
-      <div className="flex flex-col w-full gap-12 lg:flex-row-reverse lg:h-full">
-        <div className="w-full lg:flex lg:max-w-[600px] lg:max-h-[600px]">
+      <div
+        key={selectedPhase}
+        className="flex flex-col w-full gap-12  lg:flex-row-reverse lg:h-full"
+      >
+        <div className="w-full animate-appear lg:flex lg:max-w-[600px] lg:max-h-[600px]">
           <img src={img} alt="" />
         </div>
         <div className="container flex flex-col mb-12 gap-7 lg:flex-row">
@@ -69,7 +72,7 @@ const TechPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-5 lg:items-center lg:justify-center lg:max-w-[500px] lg:mx-auto">
+          <div className="flex flex-col gap-5 animate-appear lg:items-center lg:justify-center lg:max-w-[500px] lg:mx-auto">
             <h2 className="tracking-widest text-center text-secondary-500 font-Barlow">
               THE TERMINOLOGY…
             </h2>
